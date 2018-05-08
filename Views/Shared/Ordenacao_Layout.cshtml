@@ -1,0 +1,38 @@
+﻿<html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <link href="~/Content/Css/bootstrap.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div>
+            <form action=ViewBag.add>
+                <input id="value" name="value" />
+                <button type="submit" class="btn btn-primary">+</button>
+            </form>
+
+            <form action=ViewBag.remove>
+                <input id="value" name="value" />
+                <button type="submit" class="btn btn-danger">x</button>
+            </form>
+
+            <form action=ViewBag.clean>
+                <button type="submit" class="btn btn-warning btn-lg">Limpar Vetor</button>
+            </form>
+
+            <form action=ViewBag.sort>
+                <button type="submit" class="btn btn-success btn-lg">Ordenar Vetor</button>
+            </form>
+
+            <div class="vetor">
+                @foreach (int value in ViewBag.Array)
+                {
+                    <strong>
+                        <td>@value</td>
+                    </strong>
+                }
+            </div>
+        </div>
+
+        @RenderBody();
+    </body>
+</html>

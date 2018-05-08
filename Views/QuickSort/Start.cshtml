@@ -1,0 +1,42 @@
+﻿
+<h1>Quick Sort</h1>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Quick Sort</title>
+</head>
+<body>
+    <div>
+        <form action="/QuickSort/add">
+            <input id="value" name="value" />
+            <input type="submit" value="Adicionar" />
+        </form>
+
+        <form action="/QuickSort/remove">
+            <input id="value" name="value" />
+            <input type="submit" value="Remover" />
+        </form>
+
+        <form action="/QuickSort/limpar">
+            <input type="submit" value="Limpar Vetor" />
+        </form>
+
+        <form action="/QuickSort/ordenar">
+            <input type="submit" value="Ordenar Vetor" />
+        </form>
+
+        <form action="/QuickSort/voltar">
+            <input type="submit" value="Selecionar novo Algorítmo" />
+        </form>
+
+        <div class="vetor">
+            @foreach (int value in ViewBag.Array)
+            {
+              
+                @value
+            }
+        </div>
+    </div>
+</body>
+</html>

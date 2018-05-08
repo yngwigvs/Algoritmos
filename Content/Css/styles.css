@@ -1,0 +1,241 @@
+﻿*{
+    transform-origin: 0px 0px 0px;
+}
+
+
+
+.header{
+    padding-bottom:10px;
+    border-bottom:3px solid #e5e5e5;
+    margin: 20px auto 20px;
+}
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: #ffefef;
+}
+
+div{
+    display: block;
+}
+
+.page {
+    min-height: 100%;
+    margin: 0 auto -50px;
+}
+
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+
+.footer, .push {
+    height: 50px;
+}
+
+footer {
+    background: #343a40;
+    color: white;
+    line-height: 50px;
+    padding: 0 20px;
+}
+
+
+.button-close{
+    padding-bottom:160px;
+    padding-top:160px;
+}
+
+.button-basic {
+    padding-bottom:15px;
+}
+
+.btn-custom{
+    padding: 1px 15px 3px 2px;
+    border-radius: 50px;
+}
+
+.btn-icon{
+    padding: 8px;
+    background: #ffffff
+}
+
+.visible-pane {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height: 20px;
+    width: 50px;
+}
+
+
+.pane {
+    position: relative;
+    background-color: #343a40;
+    color: white;
+    cursor: pointer;
+}
+
+.invisible{
+    visibility: hidden;
+}
+
+
+#action-show {
+    padding: 15px;
+    padding-top: 29px;
+    height: 90px;
+    width: 50px;
+    top: 5px;
+}
+    #action-show:hover {
+        background-color: #212326;
+        color: red
+    }
+
+#actions {
+    height: 45px;
+    width: 200px;
+    left: 55px;
+    top: -85px;
+}
+
+.object-pane {
+    position: relative;
+    background-color: #343a40;
+    font-weight: bold;
+    cursor: pointer;
+    height: 45px;
+    padding-left: 8px;
+    padding-top:10px;
+}
+
+    .object-pane:hover {
+        background-color: #212326;
+        color:red
+    }
+
+#sort{
+    bottom:16px;
+}
+
+.op{
+    position:relative;
+}
+
+#new-array-options{
+    top: -125px;
+    left: 260px;
+    width:140px;
+    height: 40px;
+}
+
+.object-new-array-options {
+    font-weight: bold;
+    padding-left: 8px;
+    padding-top: 8px;
+    height: 40px;
+    width: 5000px;
+}
+
+    .object-new-array-options:hover {
+        background-color: #212326;
+        color: red
+    }
+
+#input {
+    position: relative;
+    width: 140px;
+}
+
+#random {
+    position: relative;
+    background-color: #343a40;
+    bottom: 56px;
+    left: 142px;
+    width: 140px;
+}
+
+#sorted {
+    position: relative;
+    background-color: #343a40;
+    bottom: 112px;
+    left: 284px;
+    width: 140px;
+}
+
+#unsorted {
+
+    position: relative;
+    background-color: #343a40;
+    bottom: 168px;
+    left: 426px;
+    width:140px;
+}
+
+
+#sort-visual-elements {
+    position: absolute;
+    background-color: #343a40;
+    width: 85%;
+    height: 70%;
+    top: 18%;
+    left: 7.5%;
+}
+
+svg.radial-progress {
+    height: auto;
+    max-width: 200px;
+    padding: 1em;
+    transform: rotate(-90deg);
+    width: 100%;
+}
+
+    svg.radial-progress circle {
+        fill: rgba(0,0,0,0);
+        stroke: #ef0e0e;
+        stroke-dashoffset: 219.91148575129;
+        stroke-width: 10;
+    }
+
+        svg.radial-progress circle.incomplete {
+            opacity: 0.25;
+        }
+
+        svg.radial-progress circle.complete {
+            stroke-dasharray: 219.91148575129;
+        }
+
+    svg.radial-progress text {
+        fill: #fff;
+        text-anchor: middle;
+    }
+
+    svg.radial-progress circle {
+        stroke: #08af32;
+    }
+
+.radial-bar{
+    position: absolute;
+    left: -12px;
+    top: 100px;
+}
+
+.overlays {
+    display: none;
+    background: #eee;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 1003;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+
+

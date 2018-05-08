@@ -1,0 +1,43 @@
+﻿
+<h1>Merge Sort</h1>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Merge Sort</title>
+</head>
+<body>
+    <div>
+        <form action="/MergeSort/add">
+            <input id="value" name="value" />
+            <input type="submit" value="Adicionar" />
+        </form>
+
+        <form action="/MergeSort/remove">
+            <input id="value" name="value" />
+            <input type="submit" value="Remover" />
+        </form>
+
+        <form action="/MergeSort/limpar">
+            <input type="submit" value="Limpar Vetor" />
+        </form>
+
+        <form action="/MergeSort/ordenar">
+            <input type="submit" value="Ordenar Vetor" />
+        </form>
+
+        <form action="/MergeSort/voltar">
+            <input type="submit" value="Selecionar novo Algorítmo" />
+        </form>
+
+        <div class="vetor">
+            @foreach (int value in ViewBag.Array)
+            {
+                <strong>
+                    <td>@value</td>
+                </strong>
+            }
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+﻿
+<h1>Heap Sort</h1>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Heap Sort</title>
+</head>
+<body>
+    <div>
+        <form action="/HeapSort/add">
+            <input id="value" name="value" />
+            <input type="submit" value="Adicionar" />
+        </form>
+
+        <form action="/HeapSort/remove">
+            <input id="value" name="value" />
+            <input type="submit" value="Remover" />
+        </form>
+
+        <form action="/HeapSort/limpar">
+            <input type="submit" value="Limpar Vetor" />
+        </form>
+
+        <form action="/HeapSort/ordenar">
+            <input type="submit" value="Ordenar Vetor" />
+        </form>
+
+        <form action="/HeapSort/voltar">
+            <input type="submit" value="Selecionar novo Algorítmo" />
+        </form>
+
+        <div class="vetor">
+            @foreach (int value in ViewBag.Array)
+            {
+                <strong>
+                    <td>@value</td>
+                </strong>
+            }
+        </div>
+    </div>
+</body>
+</html>
