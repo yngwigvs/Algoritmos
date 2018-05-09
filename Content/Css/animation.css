@@ -93,24 +93,24 @@
 @-webkit-keyframes bounceInRight {
     0% {
         opacity: 0;
-        -webkit-transform: translateX(1500px);
+        -webkit-transform: translateX(1000px);
     }
 
     100% {
         opacity: 1;
-        -webkit-transform: translateX(0);
+        -webkit-transform: translateX(0px);
     }
 }
 
 @keyframes bounceInRight {
     0% {
         opacity: 0;
-        transform: translateX(1500px);
+        -webkit-transform: translateX(1000px);
     }
 
     100% {
         opacity: 1;
-        transform: translateX(0);
+        -webkit-transform: translateX(0px);
     }
 }
 
@@ -136,12 +136,12 @@
 @keyframes bounceOutRight {
     0% {
         opacity: 1;
-        transform: translateX(0px);
+        -webkit-transform: translateX(0px);
     }
 
     100% {
         opacity: 0;
-        transform: translateX(1500px);
+        -webkit-transform: translateX(1000px);
     }
 }
 

@@ -9,7 +9,7 @@ var speed = 1000;
 
 function main() {
 
-    initializeSvg();
+    randomArray();
 
     $(document).on("click", "#action-show", mostrarBarra);
     $(document).on("click", "#new-array", novoVetor);
@@ -27,10 +27,6 @@ function main() {
     });
 
 
-}
-
-function initializeSvg() {
-    randomArray();
 }
 
 
@@ -364,7 +360,7 @@ function inputArray() {
 
     console.log(inputDiv);
 
-    inputDiv.setAttribute("display","block");
+    inputDiv.style.display = "block";
     console.log(inputDiv);
      
 }
